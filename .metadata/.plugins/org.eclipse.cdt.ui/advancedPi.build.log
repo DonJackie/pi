@@ -1,0 +1,23 @@
+20:16:59 **** Incremental Build of configuration Debug for project advancedPi ****
+make all 
+'Building target: advancedPi'
+'Invoking: Cross GCC Linker'
+arm-linux-gnueabihf-gcc  -o "advancedPi"  ./src/advancedPi.o   -lwiringPi -lpthread
+c:/sysgcc/raspberry/bin/../arm-linux-gnueabihf/sysroot/lib/arm-linux-gnueabihf/libpthread.so: undefined reference to `__twalk_r@GLIBC_PRIVATE'
+c:/sysgcc/raspberry/bin/../arm-linux-gnueabihf/sysroot/lib/arm-linux-gnueabihf/libpthread.so: undefined reference to `__libc_fcntl64@GLIBC_PRIVATE'
+c:/sysgcc/raspberry/bin/../arm-linux-gnueabihf/sysroot/lib/arm-linux-gnueabihf/libpthread.so: undefined reference to `_IO_enable_locks@GLIBC_PRIVATE'
+c:/sysgcc/raspberry/bin/../arm-linux-gnueabihf/sysroot/lib/arm-linux-gnueabihf/libpthread.so: undefined reference to `__mmap@GLIBC_PRIVATE'
+c:/sysgcc/raspberry/bin/../arm-linux-gnueabihf/sysroot/lib/arm-linux-gnueabihf/libpthread.so: undefined reference to `__munmap@GLIBC_PRIVATE'
+c:/sysgcc/raspberry/bin/../arm-linux-gnueabihf/sysroot/lib/arm-linux-gnueabihf/libpthread.so: undefined reference to `__mprotect@GLIBC_PRIVATE'
+c:/sysgcc/raspberry/bin/../arm-linux-gnueabihf/sysroot/lib/arm-linux-gnueabihf/libpthread.so: undefined reference to `__tunable_get_val@GLIBC_PRIVATE'
+c:/sysgcc/raspberry/bin/../arm-linux-gnueabihf/sysroot/lib/arm-linux-gnueabihf/libpthread.so: undefined reference to `__read_nocancel@GLIBC_PRIVATE'
+c:/sysgcc/raspberry/bin/../arm-linux-gnueabihf/sysroot/lib/arm-linux-gnueabihf/libpthread.so: undefined reference to `__close_nocancel@GLIBC_PRIVATE'
+c:/sysgcc/raspberry/bin/../arm-linux-gnueabihf/sysroot/lib/arm-linux-gnueabihf/libpthread.so: undefined reference to `__open64_nocancel@GLIBC_PRIVATE'
+c:/sysgcc/raspberry/bin/../arm-linux-gnueabihf/sysroot/lib/arm-linux-gnueabihf/libpthread.so: undefined reference to `__sigtimedwait@GLIBC_PRIVATE'
+c:/sysgcc/raspberry/bin/../arm-linux-gnueabihf/sysroot/lib/arm-linux-gnueabihf/libpthread.so: undefined reference to `__write_nocancel@GLIBC_PRIVATE'
+collect2.exe: error: ld returned 1 exit status
+make: *** [advancedPi] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+20:17:00 Build Failed. 1 errors, 0 warnings. (took 563ms)
+

@@ -1,0 +1,102 @@
+23:39:52 **** Clean-only build of configuration Debug for project pi ****
+make clean 
+rm -rf  ./src/pi.o ./src/thread.o  ./src/pi.d ./src/thread.d  pi
+' '
+23:39:53 **** Build of configuration Debug for project pi ****
+make all 
+'Building file: ../src/pi.c'
+'Invoking: Cross GCC Compiler'
+arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pi.d" -MT"src/pi.o" -o "src/pi.o" "../src/pi.c"
+'Finished building: ../src/pi.c'
+' '
+'Building file: ../src/thread.c'
+'Invoking: Cross GCC Compiler'
+arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/thread.d" -MT"src/thread.o" -o "src/thread.o" "../src/thread.c"
+../src/thread.c: In function 'create_all_threads':
+../src/thread.c:12:23: warning: passing argument 1 of 'ThreadStart_Start' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(ThreadStart_Start(&threadID1, don1, NULL) == false)
+                       ^~~~~~~~~~
+In file included from ../src/thread.c:9:
+../src/thread.h:39:37: note: expected 'ThreadStart *' {aka 'struct app_thread_starter_t *'} but argument is of type 'pthread_t *' {aka 'long unsigned int *'}
+ bool ThreadStart_Start(ThreadStart *pStarter, ThreadRoutine routine, void *arg);
+                        ~~~~~~~~~~~~~^~~~~~~~
+../src/thread.c:18:23: warning: passing argument 1 of 'ThreadStart_Start' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(ThreadStart_Start(&threadID2, don2, NULL) == false)
+                       ^~~~~~~~~~
+In file included from ../src/thread.c:9:
+../src/thread.h:39:37: note: expected 'ThreadStart *' {aka 'struct app_thread_starter_t *'} but argument is of type 'pthread_t *' {aka 'long unsigned int *'}
+ bool ThreadStart_Start(ThreadStart *pStarter, ThreadRoutine routine, void *arg);
+                        ~~~~~~~~~~~~~^~~~~~~~
+../src/thread.c:24:23: warning: passing argument 1 of 'ThreadStart_Start' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(ThreadStart_Start(&threadID3, don3, NULL) == false)
+                       ^~~~~~~~~~
+In file included from ../src/thread.c:9:
+../src/thread.h:39:37: note: expected 'ThreadStart *' {aka 'struct app_thread_starter_t *'} but argument is of type 'pthread_t *' {aka 'long unsigned int *'}
+ bool ThreadStart_Start(ThreadStart *pStarter, ThreadRoutine routine, void *arg);
+                        ~~~~~~~~~~~~~^~~~~~~~
+../src/thread.c:30:23: warning: passing argument 1 of 'ThreadStart_Start' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(ThreadStart_Start(&threadID4, don4, NULL) == false)
+                       ^~~~~~~~~~
+In file included from ../src/thread.c:9:
+../src/thread.h:39:37: note: expected 'ThreadStart *' {aka 'struct app_thread_starter_t *'} but argument is of type 'pthread_t *' {aka 'long unsigned int *'}
+ bool ThreadStart_Start(ThreadStart *pStarter, ThreadRoutine routine, void *arg);
+                        ~~~~~~~~~~~~~^~~~~~~~
+../src/thread.c: In function 'release_all_threads':
+../src/thread.c:122:19: warning: passing argument 1 of 'ThreadStart_Quit' from incompatible pointer type [-Wincompatible-pointer-types]
+  ThreadStart_Quit(&threadID1);
+                   ^~~~~~~~~~
+../src/thread.c:88:36: note: expected 'ThreadStart *' {aka 'struct app_thread_starter_t *'} but argument is of type 'pthread_t *' {aka 'long unsigned int *'}
+ void ThreadStart_Quit(ThreadStart *pStarter)
+                       ~~~~~~~~~~~~~^~~~~~~~
+../src/thread.c:123:27: warning: passing argument 1 of 'ThreadStart_WaitReleased' from incompatible pointer type [-Wincompatible-pointer-types]
+  ThreadStart_WaitReleased(&threadID1);
+                           ^~~~~~~~~~
+../src/thread.c:108:44: note: expected 'ThreadStart *' {aka 'struct app_thread_starter_t *'} but argument is of type 'pthread_t *' {aka 'long unsigned int *'}
+ void ThreadStart_WaitReleased(ThreadStart *pStarter)
+                               ~~~~~~~~~~~~~^~~~~~~~
+../src/thread.c:126:19: warning: passing argument 1 of 'ThreadStart_Quit' from incompatible pointer type [-Wincompatible-pointer-types]
+  ThreadStart_Quit(&threadID2);
+                   ^~~~~~~~~~
+../src/thread.c:88:36: note: expected 'ThreadStart *' {aka 'struct app_thread_starter_t *'} but argument is of type 'pthread_t *' {aka 'long unsigned int *'}
+ void ThreadStart_Quit(ThreadStart *pStarter)
+                       ~~~~~~~~~~~~~^~~~~~~~
+../src/thread.c:127:27: warning: passing argument 1 of 'ThreadStart_WaitReleased' from incompatible pointer type [-Wincompatible-pointer-types]
+  ThreadStart_WaitReleased(&threadID2);
+                           ^~~~~~~~~~
+../src/thread.c:108:44: note: expected 'ThreadStart *' {aka 'struct app_thread_starter_t *'} but argument is of type 'pthread_t *' {aka 'long unsigned int *'}
+ void ThreadStart_WaitReleased(ThreadStart *pStarter)
+                               ~~~~~~~~~~~~~^~~~~~~~
+../src/thread.c:130:19: warning: passing argument 1 of 'ThreadStart_Quit' from incompatible pointer type [-Wincompatible-pointer-types]
+  ThreadStart_Quit(&threadID3);
+                   ^~~~~~~~~~
+../src/thread.c:88:36: note: expected 'ThreadStart *' {aka 'struct app_thread_starter_t *'} but argument is of type 'pthread_t *' {aka 'long unsigned int *'}
+ void ThreadStart_Quit(ThreadStart *pStarter)
+                       ~~~~~~~~~~~~~^~~~~~~~
+../src/thread.c:131:27: warning: passing argument 1 of 'ThreadStart_WaitReleased' from incompatible pointer type [-Wincompatible-pointer-types]
+  ThreadStart_WaitReleased(&threadID3);
+                           ^~~~~~~~~~
+../src/thread.c:108:44: note: expected 'ThreadStart *' {aka 'struct app_thread_starter_t *'} but argument is of type 'pthread_t *' {aka 'long unsigned int *'}
+ void ThreadStart_WaitReleased(ThreadStart *pStarter)
+                               ~~~~~~~~~~~~~^~~~~~~~
+../src/thread.c:134:19: warning: passing argument 1 of 'ThreadStart_Quit' from incompatible pointer type [-Wincompatible-pointer-types]
+  ThreadStart_Quit(&threadID4);
+                   ^~~~~~~~~~
+../src/thread.c:88:36: note: expected 'ThreadStart *' {aka 'struct app_thread_starter_t *'} but argument is of type 'pthread_t *' {aka 'long unsigned int *'}
+ void ThreadStart_Quit(ThreadStart *pStarter)
+                       ~~~~~~~~~~~~~^~~~~~~~
+../src/thread.c:135:27: warning: passing argument 1 of 'ThreadStart_WaitReleased' from incompatible pointer type [-Wincompatible-pointer-types]
+  ThreadStart_WaitReleased(&threadID4);
+                           ^~~~~~~~~~
+../src/thread.c:108:44: note: expected 'ThreadStart *' {aka 'struct app_thread_starter_t *'} but argument is of type 'pthread_t *' {aka 'long unsigned int *'}
+ void ThreadStart_WaitReleased(ThreadStart *pStarter)
+                               ~~~~~~~~~~~~~^~~~~~~~
+'Finished building: ../src/thread.c'
+' '
+'Building target: pi'
+'Invoking: Cross GCC Linker'
+arm-linux-gnueabihf-gcc  -o "pi"  ./src/pi.o ./src/thread.o   -lpthread
+'Finished building target: pi'
+' '
+23:41:46 **** Incremental Build of configuration Debug for project pi ****
+make all 
+make: Nothing to be done for `all'.

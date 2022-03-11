@@ -1,0 +1,17 @@
+21:42:00 **** Incremental Build of configuration Debug for project raspi_c ****
+make all 
+'Building file: ../src/raspi_c.c'
+'Invoking: Cross GCC Compiler'
+arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/raspi_c.d" -MT"src/raspi_c.o" -o "src/raspi_c.o" "../src/raspi_c.c"
+'Finished building: ../src/raspi_c.c'
+' '
+'Building target: raspi_c'
+'Invoking: Cross GCC Linker'
+arm-linux-gnueabihf-gcc  -o "raspi_c"  ./src/raspi_c.o   -lwiringPi
+c:/sysgcc/raspberry/bin/../lib/gcc/arm-linux-gnueabihf/10/../../../../arm-linux-gnueabihf/bin/ld.exe: cannot find -lwiringPi
+collect2.exe: error: ld returned 1 exit status
+make: *** [raspi_c] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+21:42:00 Build Failed. 2 errors, 0 warnings. (took 809ms)
+
